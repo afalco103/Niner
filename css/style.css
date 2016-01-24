@@ -1,0 +1,53 @@
+html {
+    height:100%;
+}
+td {
+	
+    text-align:center;
+    margin:0;
+    width:30px;
+    height:30px;
+    border:black 2px solid;
+}
+#grid {
+    border-collapse: collapse;
+    cursor:default;
+}
+#grid .selected {
+    background:gray;
+}
+.bust {
+    background:red;
+}
+.max {
+    background:green;
+}
+.controls * {
+    margin-top:0; 
+    margin-bottom:5px;
+}
+.controls button {
+    margin-right: 5px;
+}
+#reset {
+    margin-top:20px;
+}
+ul {
+    padding:0;
+    list-style-type:none;
+}
+li {
+    display:inline-block;
+    vertical-align: top;
+    margin-right:20px;
+}
+body{
+	background:black;
+    height:100%;   
+    color:white;
+    padding:20%;
+    padding-top:20px; 
+}
+h1 {
+    margin-bottom: 5px;
+}

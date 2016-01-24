@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="images/niner.ico" />
+    <title>Niner</title>
+    <script src="js/jquery-1.12.0.min.js"></script>
+    <script src="js/niner.js"></script>
+    
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body class="win-type-body">
+
+    <h1>Niner</h1>
+    <img src="images/settings.png" height="20" width="20" /><img />
+    <div class="controls">
+        <p>Settings</p>
+        <p>Figured out that the game's impossible? Try setting the target to a power of 2.</p>
+        <p id="size">Size: 3</p>
+        <p><button onclick="incSize(1)">+</button><button onclick="incSize(-1)">-</button></p>
+        <p id="max">Target: 9</p>
+        <p><button onclick="incMax(1)">+1</button><button onclick="incMax(-1)">-1</button></p>
+        <p><button onclick="incMax(5)">+5</button><button onclick="incMax(-5)">-5</button></p>
+        <p><button onclick="incMax(10)">+10</button><button onclick="incMax(-10)">-10</button></p>
+
+    </div>
+        <ul>
+            <li id="game">
+                <table id="grid"></table>
+                <button id="reset">Reset</button>
+            </li>
+            <li class="controls">
+                <h3 id="score"></h3>
+                <p id="highscore">High Score: 0</p>
+                <p id="average">Average Score: 0</p>
+            </li>
+            
+        </ul>
+    <div id="instructions">
+        <h2>Instructions</h2>
+        <p>Select 2 adjacent numbers. Of the 2 you pick, the first becomes the difference, and the second becomes the sum.</p>
+        <p id="target"></p>
+        <h2>Scoring</h2>
+        <p>Black boxes: Face value</p>
+        <p>Green boxes: Face x2</p>
+        <p>Red boxes: 0</p>
+
+    </div>
+</body>
+</html>
