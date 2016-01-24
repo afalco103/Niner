@@ -5,7 +5,7 @@ $(document).ready(function () {
     highscore = 0;
     gamesPlayed = -1;
     average = 0;
-    max = size * size;
+    max = 8;
 
     initGrid();
     $("div.controls").hide();
@@ -212,13 +212,5 @@ function incMax(x) {
     average = 0;
     highscore = 0;
     $(".target").text("Target: " + max);
-    initGrid();
-}
-
-function fix() {
-    size = 3;
-    max = 8;
-    $(".target").text("Target: " + max);
-    $("div.controls").toggle();
     initGrid();
 }
