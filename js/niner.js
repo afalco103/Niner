@@ -119,6 +119,7 @@ function initGrid() {
     levelGrid();
     //set some text
     $("#score").text("Score: " + score);
+    $("#currentTarget").text("Target: " + max);
     $("#target").text("Get all of the boxes to be as close to " + max + " as possible. The game ends when you choose to end it. You don't really win until you get a perfect score.");
 }
 
@@ -210,6 +211,13 @@ function incMax(x) {
     }
     average = 0;
     highscore = 0;
-    $("#max").text("Target: " + max);
+    $(".target").text("Target: " + max);
+    initGrid();
+}
+
+function fix() {
+    size = 3;
+    max = 8;
+    $(".target").text("Target: " + max);
     initGrid();
 }
