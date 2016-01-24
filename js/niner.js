@@ -23,7 +23,7 @@ $(document).ready(function () {
         initGrid();
     });
 
-    $("img").click(function () {
+    $("#settings").click(function () {
         $("div.controls").toggle();
     });
 
