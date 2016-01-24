@@ -219,5 +219,6 @@ function fix() {
     size = 3;
     max = 8;
     $(".target").text("Target: " + max);
+    $("div.controls").toggle();
     initGrid();
 }
